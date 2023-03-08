@@ -12,18 +12,22 @@
 A = []
 from random import randint
 n = int(input("Введите число элементов массива: "))
-A=[randint(0, 100) for i in range(n)]
+A=[randint(0, 5) for i in range(n)]
 print(A)
 
 B = []
 from random import randint
 m= int(input("Введите число элементов массива: "))
-B=[randint(0, 1100) for i in range(m)]
+B=[randint(0, 5) for i in range(m)]
 print(B)
 
-list = set(A)
-print(list)
+C = A + B
+print(C)
 
-list_2 = set(B)
-print(list_2)
+for i in set(C):
+    if C.count(i) > 1:
+        print(i)
+
+
+
 
