@@ -14,3 +14,11 @@ for i in stroka:
 
 for k,n in d.items():
     print (f'{k}_{n}')
+
+# for symbol in string:
+#     if symbol not in dict:
+#         dict[symbol] = 1
+#     else:
+#         dict[symbol] +=1
+# for key, value in dict.items():
+#     print(f'{key}_{value}')
