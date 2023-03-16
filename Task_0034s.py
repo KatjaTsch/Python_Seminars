@@ -14,13 +14,13 @@
 A = []
 from random import randint
 n = int(input("Введите размер массива: "))
-A=[randint(1, 5) for i in range(n)]
+A=[randint(1, 100) for i in range(n)]
 print(A)
 
 B = []
 from random import randint
 m= int(input("Введите число элементов массива: "))
-B=[randint(0, 5) for i in range(m)]
+B=[randint(0, 100) for i in range(m)]
 print(B)
 
 for i in A:
@@ -28,4 +28,8 @@ for i in A:
         if i == j:
             break
     else:
-        print(i)
+        print(i, end = ' ')
+
+# for i in A:
+#     if i not in B:
+#       print(i)
