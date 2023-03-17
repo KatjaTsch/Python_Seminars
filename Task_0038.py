@@ -10,6 +10,6 @@ max_num = int(input("Введите max: "))
 A=[randint(min_num, max_num) for i in range(n)]
 print(A)
 
-for i in range(1, n):
-    if min_num < A[i] < max_num:
-        print(A[i])
+for i in range(len(A)):
+    if min_num <= A[i] <= max_num:
+        print(i)
